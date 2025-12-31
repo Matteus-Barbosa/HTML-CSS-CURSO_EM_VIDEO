@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1 {
+    /*shorthan = font(style, variant, weight, size/line-height, family)*/
+    font: italic 2em "Playwrite GB S", 'cursive';
+}
+
+h2 {
+    font: 1.5em "Playwrite GB S", 'cursive';
+}
+
+p {
+    font: 1em "Nunito", sans-serif;
+    text-align: justify;
+    /*right, left, center justify*/
+}
+
+/*
+Safe Fonts:
+    Arial (sans-serif)
+    Verdana (sans-serif)
+    Tahoma (sans-serif)
+    Trebuchet MS (sans-serif)
+    Times New Roman (serif)
+    Georgia (serif)
+    Garamond (serif)
+    Courier New (monospace)
+    Brush Script MT (cursive)*/
+
+
+/*Tamanhos:
+    TELA = (em, px = recomendadass), %
+    IMPRESSO = em, cm, mm, in, pt, pc, %*/
+
+/*Relativos à janela do leitor: rem, vw e vh*/

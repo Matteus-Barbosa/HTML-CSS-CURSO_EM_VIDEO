@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Áudio</h1> <!-- MP3, WAV, OGG-->
+    <p>Áudios em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="aud/happy-mistake.mp3" type="audio/mpeg">
+        <source src="aud/happy-mistake.ogg" type="audio/ogg">
+        <source src="aud/happy-mistake.wav" type="audio/wav"> <!-- EVITE, MUITO PESADO -->
+        <p>Seu navegador não é compativel com o arquivo de áudio. <a href="aud/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">Baixe o arquivo MP3</a>.</p>
+    </audio>
+
+    <h1>Vídeo</h1>
+    <p>Vídeos locais em HTML5 consomem muita banda, logo não são economicos</p>
+    <video width="600px" poster="img/limoes-capa.png" controls>
+        <source src="vid/meu-video.mp4" type="video/mp4">
+        <source src="vid/meu-video.ogv" type="video/ogv">
+        <source src="vid/meu-video.mp4" type="video/webm">
+        <source src="vid/meu-video.m4v" type="video/m4v">
+        <p>Infelizmente o navegador não conseguiu carregar o vídeo</p>
+    </video>
+
+    <h2>Vídeos Incorporados</h2>
+    <p>Videos incorporados não consomem banda, logo são mais economicos.</p>
+    <h3>YouTube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jPWsBuiy1rE?si=FdUI54GKkqnut_-x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h3>Vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/734924234?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Earth Afire"></iframe>
+</body>
+</html> 

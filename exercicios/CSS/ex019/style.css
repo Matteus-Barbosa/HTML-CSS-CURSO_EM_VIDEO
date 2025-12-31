@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'React';
+    src: url('fonts/Figtree.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+    Tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-att (Apple Advanced Typography)
+    - svg
+*/
+
+h1 {
+    font: bold 3em 'React', Verdana, Arial, sans-serif;
+}
+
+h2 {
+    font: 2em 'React', Verdana, Arial, sans-serif;
+}
+
+p {
+    font: 1.5em 'React', Verdana, Arial, sans-serif;
+    text-align: justify;
+}
