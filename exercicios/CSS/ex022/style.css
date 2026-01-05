@@ -1,0 +1,47 @@
+header {
+    border: 2px solid;
+    padding: 1em;
+    margin-bottom: 4px;
+}
+
+nav {
+    border: 2px solid;
+}
+
+main {
+    border: 2px solid;
+    padding: 1em;
+    margin-bottom: 4px;
+}
+
+section {
+    border: 2px solid;
+    padding: 1em;
+}
+
+article {
+    display: flex;
+    border: 2px solid;
+    padding: 1em;
+    margin-bottom: 4px;
+}
+
+article>aside {
+    border: 2px solid;
+    padding: 1em;
+    margin: 4px 0px;
+    width: 2em;
+    margin-left: auto;
+}
+
+aside {
+    border: 2px solid;
+    padding: 1em;
+    margin: 4px 0px;
+}
+
+footer {
+    border: 2px solid;
+    padding: 1em;
+    margin: 4px 0px;
+}

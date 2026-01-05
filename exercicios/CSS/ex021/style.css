@@ -1,0 +1,37 @@
+/* Box Model 
+
+Todo elemento em HTML é uma box = height + width = 'box-size'
+Compostas somente pelo 'content'
+
+exceto: (body = 8px de margin)
+*/
+
+div {
+    border: 1px solid rgb(255, 255, 255);
+    /*-width -style -color*/
+    outline: solid 1px black;
+    border-radius: 10px 30px;
+    width: 14em;
+    height: 6em;
+    background-color: rgb(0, 123, 224);
+    margin: 1em auto;
+    /*-top -right - bottom -left 
+     = div centralizada*/
+    padding: 1em;
+    /*-top+bottom -right+left*/
+    box-shadow: 4px 4px 8px black;
+    /*-h -v -blur -color*/
+}
+
+p {
+    text-align: center;
+    height: 1em;
+    width: 1.5em;
+    color: white;
+    font: bold 1em Arial;
+    margin: auto;
+}
+
+/*Tipos de caixas:
+    box-level / inline-level = ex: div / span
+*/
