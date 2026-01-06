@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Android';
+    src: url(fonts/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1, h2 {
+    font-family: 'Android', Arial, sans-serif;
+}
