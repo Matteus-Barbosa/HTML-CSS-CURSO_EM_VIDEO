@@ -4,10 +4,32 @@
     font-weight: normal;
     font-style: normal;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 main h1, h2 {
     font-family: 'Android', Arial, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to top, rgb(26, 92, 56), rgb(58, 208, 124));
+    color: white;
+    text-align: center;
+    padding: 3em;
+}
+header > nav {
+    text-align: start;
+    margin: 20px auto 20px auto;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1.5em;
 }
