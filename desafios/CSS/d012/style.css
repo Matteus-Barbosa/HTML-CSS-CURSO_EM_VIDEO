@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --title: "Passion One", sans-serif;
+    --paragraph: "Sriracha", cursive;
+    --default-font: Verdana, Geneva,Tahoma, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font: small-caps bold 10vw var(--title);
+}
+header > p {
+    padding-bottom: 50px;
+    font-size: 1em;
+    font-family: var(--default-font);
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font: bold 1em var(--default-font);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    padding: 10vh 0px 10vh 30px;
+    font: 3.5vw var(--paragraph);
+}
+section > p {
+    padding-bottom: 2em;
+    line-height: 2em
+}
+section.normal {
+    background-color: white;
+    font: 3.5vw var(--paragraph);
+}
+section.imagem {
+    color: white;
+    box-shadow: inset 5px 8px 8px rgba(0, 0, 0, 0.418);
+    background-size: cover;
+    background-attachment: fixed; /*Paralax effect*/
+}
+section#img01 {
+    background-image: url('img/background001.jpg');
+    background-position: right center;
+}
+section#img02 {
+    background-image: url('img/background002.jpg');
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.505);
+    text-shadow: 1px 1px 2px black;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font: 0.9em var(--default-font);
+}
