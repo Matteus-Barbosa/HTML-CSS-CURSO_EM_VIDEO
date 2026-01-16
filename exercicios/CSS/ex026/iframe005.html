@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe com scripts</title>
+</head>
+<body>
+    <!-- Cuidado com sites externos que entram em seus iframes! -->
+
+    <h1>Meu site</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque id itaque sunt, velit similique a ipsa voluptates! Aut, optio eveniet? Incidunt repellat voluptatibus magnam cum? Sed incidunt provident tempora placeat?</p>
+
+    <iframe src="extras/pag005.html" frameborder="1" referrerpolicy="no-referrer" sandbox="allow-scripts"> <!-- bloqueia todo resto menos os scripts -->
+        Não é compativel.
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quis cupiditate officia quibusdam inventore dolorem veniam voluptate ullam esse voluptatem quidem earum consectetur molestiae incidunt vel, reiciendis iure accusantium deserunt!</p>
+</body>
+</html>
