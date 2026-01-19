@@ -6,20 +6,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body { /*garantir que a "box" raiz do site tenha uma altura definida, permitindo que o body e filhos consigam se expandir corretamente.*/
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-}
-
-body {
+html, body {
     background: url(../imgs/fundo-madeira.jpg) no-repeat center center fixed;
     background-size: cover;
+    background-color: black;
 }
 
 main {
     position: relative;
     height: 100vh;
+    width: 98vw;
 }
 
 section#phone {
@@ -57,4 +53,36 @@ section#social-medias img:hover {
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.409);
     transition: transform .2s, border .3s;
+}
+
+div#footer{
+    background-color: rgba(255, 255, 255, 0.696);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    max-width: 300px;
+}
+div#footer > p {
+    color: rgb(0, 0, 0);
+}
+
+div#footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div#footer #name{
+    color: rgb(254, 139, 24);
+}
+div#footer #name:hover{
+    color: rgb(221, 121, 21);
+}
+
+div#footer #course{
+    color: rgb(52, 191, 247);
+}
+div#footer #course:hover{
+    color: rgb(42, 156, 201);
 }
