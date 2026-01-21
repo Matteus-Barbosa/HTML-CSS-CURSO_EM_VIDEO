@@ -12,8 +12,15 @@ html {
     font-size: 1em;
 }
 
+body {
+    background-color: #2D2440;
+    color: white;
+}
+
 header {
-    background-color: aqua;
+    background-color: #2D2440;
+    padding: 20px;
+    border-bottom: 2px solid black;
 }
 
 header > h1 {
@@ -24,17 +31,36 @@ header > h1 {
 
 menu ul{
     list-style-type: none;
-    background-color: lightblue;
 }
 
 menu li{
-    background-color: darkblue;
-    color: white;
+    background-color: #411F8C;
+    border-radius: 10px;
     display: inline-block;
     padding: 10px;
+    margin-right: 10px;
+}
+
+menu li:hover{
+    background-color: #5321BF;
+    border-radius: 0px;
+}
+
+main {
+    margin: 20px;
 }
 
 article {
     width: 600px;
     margin: auto;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    text-indent: 20px;
 }
