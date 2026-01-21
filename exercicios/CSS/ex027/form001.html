@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        *{
+        * {
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
+
 <body>
-    
+
     <h1>Form</h1>
-    
+
     <form action="cadastro.js" method="POST" autocomplete="off">
         <!-- GET = dados com max 3k bytes, não sensiveis.
-            POST = dados com arquivos, sensiveis -->
+            POST = dados com arquivos ou sensiveis -->
 
-        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!-- name mais util para html e php, id mais util para js-->
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p> <!-- name mais util para html e php, id mais util para js-->
 
-        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
 
-        <p><input type="submit" value="Enviar"></p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
     </form>
 
     <!-- APRENDER MAIS A FUNDO SOBRE HTTPS (WebSecurity)-->
 </body>
+
 </html>
