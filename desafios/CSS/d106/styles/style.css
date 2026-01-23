@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #D2D6D9;
+}
+
+main {
+    position: relative;
+    height: 90vh;
+}
+
+section#login {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
+    padding-bottom: 20px;
+}
+
+div#img {
+    margin-bottom: 9px;
+}
+
+div#img>img {
+    width: 300px;
+    height: 185px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+div#text-login {
+    margin-bottom: 9px;
+    padding: 0px 20px;
+    position: relative;
+}
+
+div#text-login>h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+div#text-login>p {
+    font-size: 1em;
+    text-align: center;
+}
+
+div#form {
+    width: 16em;
+    height: 11em;
+    margin: auto;
+}
+
+p.input-field {
+    text-align: center;
+    padding: 1.2em;
+}
+
+
+#iEmail {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccccccf5;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+#iPass {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccccccf5;
+    padding: 10px;
+}
+
+p.input-btn {
+    text-align: center;
+}
+
+#login-btn {
+    background-color: #BF9A78;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 60px;
+    border-radius: 5px;
+    margin-bottom: 9px;
+}
+
+#recovery-password-btn {
+    background-color: white;
+    border: 1px solid #BF9A78;
+    color: #BF9A78;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
