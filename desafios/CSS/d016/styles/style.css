@@ -1,84 +1,105 @@
 @charset "UTF-8";
 
+:root {
+    --background-main: #D2D6D9;
+    --background-card: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.253);
+    --input-border: #ccccccf5;
+    --input-focus: #BF9A78;
+    --button-bg: #BF9A78;
+    --button-text: #ffffff;
+    --button-shadow: rgba(0, 0, 0, 0.289);
+    --recovery-link: #BF9A78;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 body {
-    background-color: #D2D6D9;
+    background-color: var(--background-main);
 }
 
 main {
     position: relative;
-    height: 98vh;
+    min-height: 100vh;
 }
 
-section#login {
-    background-color: white;
+section.login-card {
+    background-color: var(--background-card);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.253);
-    padding-bottom: 35px;
+    box-shadow: 0px 4px 4px var(--shadow-color);
+    max-width: 320px;
+    height: 490px;
 }
 
-div#img {
+div.img {
     margin-bottom: 9px;
 }
 
-div#img>img {
+div.img>img {
     width: 300px;
     height: 185px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-div#text-login {
-    margin-bottom: 9px;
-    padding: 0px 20px;
+div.text-login {
+    padding: 0px 18px 5px;
     position: relative;
 }
 
-div#text-login>h1 {
+div.text-login>h1 {
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 9px;
 }
 
-div#text-login>p {
+div.text-login>p {
     font-size: 1em;
     text-align: center;
 }
 
-div#form {
-    width: 16em;
-    height: 11em;
+div.form {
     margin: auto;
 }
 
 p.input-field {
-    text-align: center;
-    padding: 1.2em;
+    margin: auto;
+    width: 252px;
+    padding-bottom: 20px;
 }
 
+label {
+    display: none;
+}
+
+input#iEmail, input#iPass {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--input-border);
+    padding: 0px 8px 12px;
+    width: 226px;
+    height: 25px;
+}
 
 #iEmail {
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #ccccccf5;
-    padding: 10px;
-    margin-bottom: 8px;
+    margin: 8px 0px;
 }
 
-#iPass {
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #ccccccf5;
-    padding: 10px;
+#iEmail:focus {
+    border-bottom: 2.5px solid var(--input-focus);
+}
+
+#iPass:focus {
+    border-bottom: 2.5px solid var(--input-focus);
 }
 
 p.input-btn {
@@ -86,20 +107,33 @@ p.input-btn {
 }
 
 #login-btn {
-    background-color: #BF9A78;
+    background-color: var(--button-bg);
     border: 0px;
-    color: white;
+    color: var(--button-text);
+    box-shadow: 0px 4px 6px var(--button-shadow);
     font-weight: bold;
     padding: 10px 60px;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    width: 190px;
+    height: 44px;
+}
+#login-btn:hover {
+    opacity: 0.9;
+}
+#login-btn:active {
+    transform: scale(0.98);
 }
 
 #recovery-password-btn {
-    background-color: white;
-    border: 1px solid #BF9A78;
-    color: #BF9A78;
+    color: var(--recovery-link);
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
+    width: 190px;
+    height: 44px;
+}
+
+#recovery-password-btn:hover {
+    opacity: 0.9;
 }

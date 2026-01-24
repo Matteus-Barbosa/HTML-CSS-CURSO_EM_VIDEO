@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In Screen</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/desktop.css">
 </head>
 
 <body>
     <main>
-        <section id="login">
-            <div id="img">
+        <section class="login-card">
+            <div class="img">
                 <img src="imgs/building-p.webp" alt="">
             </div>
 
-            <div id="text-login">
+            <div class="text-login">
                 <h1>Login</h1>
-                    <p>Welcome back! Sign in to your account to manage your environment settings.</p>
+                    <p>Log in to manage your settings.</p>
             </div>
 
-            <div id="form">
+            <div class="form">
 
-                <form action="login.js" method="post">
+                <form action="#" method="post">
                     <p class="input-field">
-                        <label for="iEmail"></label>
+                        <label for="iEmail">Email</label>
                         <input type="email" id="iEmail" autocomplete="email" placeholder="Email address" required><br>
-                        <label for="iPass"></label>
-                        <input type="password" name="" id="iPass" maxlength="8" minlength="8" autocomplete="current-password" placeholder="Password" required>
+                        <label for="iPass">Password</label>
+                        <input type="password" name="" id="iPass" minlength="8" autocomplete="current-password" placeholder="Password" required>
                     </p>
 
                     <p class="input-btn">
                         <input type="submit" value="Log In" id="login-btn">
                         <br>
-                        <input type="button" value="Forgot password?" id="recovery-password-btn">
+                        <a href="#" id="recovery-password-btn">Forget Password?</a>
                     </p>
                 </form>
             </div>
