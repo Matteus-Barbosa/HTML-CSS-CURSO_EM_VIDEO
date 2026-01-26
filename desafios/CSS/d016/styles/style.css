@@ -71,17 +71,18 @@ div.form {
     margin: auto;
 }
 
+label {
+    display: none;
+}
+
 p.input-field {
     margin: auto;
     width: 252px;
     padding-bottom: 20px;
 }
 
-label {
-    display: none;
-}
-
-input#iEmail, input#iPass {
+input#iEmail,
+input#iPass {
     border: none;
     outline: none;
     border-bottom: 2px solid var(--input-border);
@@ -118,9 +119,11 @@ p.input-btn {
     width: 190px;
     height: 44px;
 }
+
 #login-btn:hover {
     opacity: 0.9;
 }
+
 #login-btn:active {
     transform: scale(0.98);
 }
