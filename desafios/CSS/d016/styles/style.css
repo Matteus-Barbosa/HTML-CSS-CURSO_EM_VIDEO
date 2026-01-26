@@ -122,6 +122,7 @@ p.input-btn {
 
 #login-btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 #login-btn:active {

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) and (max-width: 992px){
+    :root {
+        --background-main: #B89872;
+        --background-fade: #1C150B;
+        --background-card: #ffffff;
+        --shadow-color: rgba(0, 0, 0, 0.253);
+        --input-border: #ccccccf5;
+        --input-focus: #BF9A78;
+        --button-bg: #BF9A78;
+        --button-text: #ffffff;
+        --button-shadow: rgba(0, 0, 0, 0.289);
+        --recovery-link: #BF9A78;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, var(--background-main) 8%, var(--background-fade) 98%);
+    }
+
+    section.login-card {
+        min-width: 580px;
+        height: 300px;
+        text-align: left;
+    }
+
+    div.img {
+        display: inline-block;
+        width: 307px;
+        height: 300px;
+        margin-bottom: 0px;
+    }
+
+    div.img>img {
+        width: 307px;
+        height: 300px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+
+    div.text-login {
+        padding: 0px 18px 5px;
+        position: absolute;
+        left: 55%;
+        top: 4%;
+    }
+
+    div.text-login>h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 9px;
+    }
+
+    div.text-login>p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    div.form {
+        width: 50%;
+        position: absolute;
+        left: 53%;
+        top: 30%;
+    }
+
+    p.input-field {
+        width: 94.5%;
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    input#iEmail,
+    input#iPass {
+        border: 2px solid transparent;
+        border-radius: 15px;
+        background-image: linear-gradient(white, white),
+            linear-gradient(to right, #F2DABD, #8C7E6D);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        padding: 5px;
+        width: 235px;
+        height: 38px;
+        padding: 0px 0px 0px 20px;
+    }
+
+    #iEmail:focus {
+        border: 2px solid var(--input-focus);
+    }
+
+    #iPass:focus {
+        border: 2px solid var(--input-focus);
+    }
+
+    p.input-btn {
+        text-align: center;
+        width: 272px;
+    }
+
+    #login-btn {
+        padding: 10px 60px;
+        width: 190px;
+        height: 44px;
+        margin-bottom: 12px;
+    }
+
+    #recovery-password-btn {
+        padding: 5px 5px;
+        border-radius: 5px;
+        width: 190px;
+        height: 44px;
+    }
+}
