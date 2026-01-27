@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: black;
+}
+
+/*
+Flexbox = Qual o formato da água? Depende do container.
+*/
+
+div.container {
+    background-color: white;
+    width: 100vw;
+    height: 50vh;
+    display: flex; /*Deixa o container em flexivel*/
+}
+
+/* Exemplo 1: Com flex: auto (cresce/encolhe conforme o espaço do container) */
+div.box.flex-auto {
+    background-color: rgb(114, 114, 114);
+    margin: 10px;
+    border-radius: 20px;
+    flex: auto;
+}
+
+/* Exemplo 2: Sem flex, tamanho fixo (não cresce/encolhe) */
+div.box.fixed {
+    background-color: rgb(180, 180, 180);
+    margin: 10px;
+    border-radius: 20px;
+    width: 50vw;
+    height: 25vh;
+}
