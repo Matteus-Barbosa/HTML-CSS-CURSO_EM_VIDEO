@@ -22,3 +22,7 @@
 2. **Imagens**: Use unidades relativas (como *%* ou *vw*) ou Imagens Responsivas (MDN) para evitar que elementos ultrapassem a largura da **viewport**.
    
 3. **Escalabilidade**: Verifique se textos longos ou tabelas não quebram o layout em *320px*
+
+## State of mind
+
+An important aspect in responsive design. Responsive design also relate to the fact that the user have a different state of mind when using a mobile phone or a desktop. For example, when you open your bank's site in the evening and check your stocks you want as much data on the screen. When you open the same page in the your lunch break your probably want to see few important details and not all the graphs of last year.
