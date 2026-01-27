@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+div.card{
+    background-color: white;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 20px;
+    
+    /*postion without transformation = transform: translate();*/
+    position: absolute;
+    left: calc(50% - 30vw);
+    top: calc(50% - 25vh);
+}
+
+/*
+Important Syntax Note: The + and - operators must be surrounded by whitespace (e.g., calc(50% - 10px) is valid, while calc(50%-10px) is invalid). Whitespace is optional but recommended for * and /
+*/
