@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box - Flexdirection</title>
+
+    <style>
+        /*
+        Configurações Flex no Pai/Container
+
+        flex-direction:
+            eixos(axis)
+            main-axis(X)
+                flex-direction: row;
+                flex-direction: row-reverse;
+            cross-axis(Y)
+                flex-direction: column;
+                flex-direction: column-reverse;
+        */
+
+        div.container{
+            background-color: tomato;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-row-reverse{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-column-reverse{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container flex-column">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+</body>
+
+</html>
