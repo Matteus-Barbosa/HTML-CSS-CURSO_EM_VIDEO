@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Tamanho dos itens - Grow e Shrink</title>
+    <style>
+        div.container{
+            background-color: tomato;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.box {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+
+        /*Grow = Quanto pode crescer*/
+        .flex-shrink{flex-shrink: 1; /*Default*/}
+
+        /*Shrink = Quanto pode diminuir*/
+        .flex-grow{flex-grow: 0;} /*Default*/
+
+        /*items totalmente fluidos*/
+        .flex-items{
+            flex-grow: 1;
+            flex-shrink: 1;
+        } /*Aumemtam e Diminuem sem problemas.*/
+
+        .flex-shrink-grow--maiorQue1{
+            flex-grow: 2;
+            flex-shrink: 2; /*Aumenta/Diminuem proporcionalmente o seu anterior, caso todo sejam 2 aumentaram igualmente.*/
+        }
+
+
+
+        div#cx1{
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+        
+        div#cx2{
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+        div#cx3{
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="cx1">A</div>
+        <div class="box" id="cx2">B</div>
+        <div class="box" id="cx3">C</div>
+    </div>
+</body>
+</html>
