@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia do Itens Flexbox</title>
+    <style>
+        div.container{
+            background-color: tomato;
+            height: 400px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-flow: row wrap; /*Empacotado*/
+        }
+
+        div.box {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            padding: 40px;
+        }
+
+        /*Todo item tem Order=0*/
+        .order1 {order: 0;}
+        .order2 {order: -2;}
+        .order3 {order: 7;}
+
+        /*Alinha o item baseado no cross-axis*/
+        .align-self--auto {align-self: auto;} /*herda alinhamento cross do pai*/
+        .align-self--flex-start {align-self: flex-start;}
+        .align-self--flex-end {align-self: flex-end;}
+        .align-self--center {align-self: center;}
+        .align-self--stretch {align-self: stretch;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box order1">A</div>
+        <div class="box order2">B</div>
+        <div class="box order3">C</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+    <div class="container">
+        <div class="box align-self--auto"></div> <!--Herdou o wrap-padrão do pai-->
+        <div class="box align-self--flex-start"></div>
+        <div class="box align-self--flex-end"></div>
+        <div class="box align-self--center"></div>
+        <div class="box align-self--stretch"></div>
+    </div>
+</body>
+</html>
