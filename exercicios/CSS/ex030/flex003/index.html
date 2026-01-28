@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-flow/direction+wrap</title>
+    <style>
+        div.container {
+            background-color: lightpink;
+            display: flex;
+        }
+
+        div.box {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            
+
+            flex: auto; /*Auto Preenche e Modela os itens evitando deixar espaços em branco.*/
+        }
+
+        .flex-wrap { /*Empacota os itens na direção do cross-axis(end)*/
+            flex-wrap: wrap;
+        }
+        .flex-wrap-reverse { /*Empacota os itens na direção do cross-axis(start)*/
+            flex-wrap: wrap-reverse;
+        }
+        .flex-wrap-row-reverse { /*Empacota os itens na direção do cross-axis(end)*/
+            flex-flow: row-reverse wrap; /*shorthand flex-directin+wrap*/
+        }
+        .flex-wrap-reverse-row-reverse { /*Empacota os itens na direção do cross-axis(start)*/
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .flex-wrap-column {
+            flex-flow: column wrap;
+        }
+        .flex-wrap-column-reverse {
+            flex-flow: column-reverse wrap;
+        }
+        .height {
+            height: 100px; /*Possibilta vê o comportamento do direction: column*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex-wrap-column height">
+        <div class="box">Exemplo de bloco A</div>
+        <div class="box">Exemplo de bloco B</div>
+        <div class="box">Exemplo de bloco C</div>
+        <div class="box">Exemplo de bloco D</div>
+        <div class="box">Exemplo de bloco E</div>
+        <div class="box">Exemplo de bloco F</div>
+        <div class="box">Exemplo de bloco G</div>
+</body>
+</html>

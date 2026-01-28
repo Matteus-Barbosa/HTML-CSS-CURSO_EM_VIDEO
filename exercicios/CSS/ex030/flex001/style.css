@@ -18,15 +18,15 @@ div.container {
     background-color: white;
     width: 100vw;
     height: 50vh;
-    display: flex; /*Deixa o container em flexivel*/
+    display: flex; /*Deixa o container flexivel*/
 }
 
-/* Exemplo 1: Com flex: auto (cresce/encolhe conforme o espaço do container) */
+/* Exemplo 1: Com flex: auto; (cresce/encolhe conforme o espaço do container) */
 div.box.flex-auto {
     background-color: rgb(114, 114, 114);
     margin: 10px;
     border-radius: 20px;
-    flex: auto;
+    flex: auto;  /*Atalho para: flex-grow: 1; flex-shrink: 1; flex-basis: auto;*/
 }
 
 /* Exemplo 2: Sem flex, tamanho fixo (não cresce/encolhe) */
