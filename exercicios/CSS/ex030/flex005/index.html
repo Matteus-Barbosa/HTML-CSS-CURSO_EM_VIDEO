@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Absoluto</title>
+    <style>
+        @charset "UTF-8";
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightsalmon;
+        }
+
+        main {
+            background-color: lightgreen;
+            height: 100vh;
+            width: 100vw;
+            /*Center abosoluto com flexbox*/
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: lightseagreen;
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            border-radius: 20px;
+            /*Sempre utilizado no container*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section > img {
+            width: 100px;
+            padding: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <img id="html" src="img/html.png" alt="html-logo">
+            <img src="img/css3.png" alt="css3">
+        </section>
+    </main>
+</body>
+
+</html>
