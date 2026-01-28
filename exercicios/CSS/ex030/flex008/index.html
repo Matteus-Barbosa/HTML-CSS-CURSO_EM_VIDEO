@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+
+    <style>
+        div.container{
+            background-color: tomato;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.box {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .flex-basis--auto {flex-basis: 150px; /* Default: A largura é dada pelo conteúdo*/}
+        .flex-basis--150px {
+            flex-basis: 150px; /*Vai tentar adptar para a largura pré-definida sempre que possivel.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box flex-basis--150px">A</div>
+        <div class="box flex-basis--150px">Outro conteúdo</div>
+        <div class="box flex-basis--150px">C</div>
+        <div class="box flex-basis--150px">Conteúdo em pouco maior</div>
+        <div class="box flex-basis--150px">E</div>
+        <div class="box flex-basis--150px">Conteúdo maior ainda, que vai ocupar mais espaço.</div>
+        <div class="box flex-basis--150px">G</div>
+    </div>
+</body>
+</html>
