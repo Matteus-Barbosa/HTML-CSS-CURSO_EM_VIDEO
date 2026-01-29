@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex = Shorthand</title>
+
+    <style>
+        .container {
+            display: flex;
+            background-color: tomato;
+            width: 90vw;
+            height: 90vh;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+        }
+
+        .item {
+            background-color: aqua;
+            width: 20vw;
+            height: 20vh;
+            border: 1px solid black;
+
+            flex: 1 1 150px;
+        }
+
+        /*Shorthand = flex: grow shrink basis;*/
+        .flex--shorthand{
+            /*default*/
+            flex: 0 1 auto;
+            flex: initial;
+
+            /*zero flexibilidade*/
+            flex: 0 0 auto;
+            flex: none;
+
+            /*max flexibilidade*/
+            flex: 1 1 auto;
+            flex: auto;
+
+            /*flex num = flex: 3(grow) 1(shrink) auto(basis)*/
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
