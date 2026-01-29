@@ -18,19 +18,28 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap; /*broake when the boxes collided*/
+    justify-content: space-between; /*it created space beteween the boxes based on the main-axis*/
+    align-items: center; /*center aligned based on the cross-axis*/
 }
 
 header>h1 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
     font-size: 2.3em;
+    border: 1px dotted black;
+    flex: 0 0 200px;
 }
 
 
 menu {
     padding: 5px 0px;
+    border: 1px dotted black;
+}
 
+menu > ul {
+    border: 1px dotted black;
 }
 
 menu>ul>li {
@@ -40,6 +49,7 @@ menu>ul>li {
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
+    margin: 0px 5px;
 }
 
 menu>ul>li:hover {
@@ -72,13 +82,9 @@ section>p {
     line-height: 1.5em;
 }
 
-@media screen and (max-width: 900px) {
-    header {
-        display: block;
-    }
-}
 
-@media screen and (max-width: 585px) {
+
+@media screen and (max-width: 650px) {
     header {
         display: block;
     }
