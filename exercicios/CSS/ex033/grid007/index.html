@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,79 @@
     <style>
         div.container {
             border: 3px solid blue;
-
             display: grid;
-
-            grid-template: repeat(3, 80px) / repeat(3, 1fr);
-            
-            /*
-            grid-row-start:;
-            grid-row-end:;
-            grid-column-start:;
-            grid-column-end:;
-            */
+            grid-template: repeat(3, 100px) / repeat(4, 1fr);
+            margin-bottom: 10px;
+            gap: 5px;
         }
 
         div.item {
-            border: 3px dashed red;
+            border: 1px dashed red;
             padding: 5px;
         }
 
+        /*Batalha Naval Like*/
+
+        div.c1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        div.c2 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        div.c3 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        /*Negative Numbers*/
+
+        div.cA {
+            grid-row-start: -1;
+            grid-row-end: -2;
+            grid-column-start: -5;
+            grid-column-end: -1;
+        }
+
+        div.cB {
+            grid-row-start: -4;
+            grid-row-end: -2;
+            grid-column-start: -5;
+            grid-column-end: -3;
+        }
+
+        div.cC {
+            grid-row-start: -4;
+            grid-row-end: -2;
+            grid-column-start: -1;
+            grid-column-end: -3;
+        }
+
+
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
+        <div class="item c1">A</div>
+        <div class="item c2">B</div>
+        <div class="item c3">C</div>
+    </div>
+
+    <div class="container">
+        <div class="item cA">A</div>
+        <div class="item cB">B</div>
+        <div class="item cC">C</div>
     </div>
 </body>
+
 </html>
