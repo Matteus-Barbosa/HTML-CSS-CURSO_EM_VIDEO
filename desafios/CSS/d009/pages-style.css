@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font: bold 3em Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 1em;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+div.btn-link {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.btn-link > a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+div.btn-link > a:hover {
+    opacity: 0.50;
+}
