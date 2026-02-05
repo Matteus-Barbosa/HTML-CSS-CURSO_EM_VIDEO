@@ -94,7 +94,7 @@ section#ficha h1 {
   text-align: left;
 }
 
-div#social {
+div.social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,12 +103,12 @@ div#social {
   margin-top: 15px;
 }
 
-div#social a {
+div.social a {
   color: var(--destaque);
   transition: color .5s;
 }
 
-div#social a:hover {
+div.social a:hover {
   color: var(--destaque-inverso);
 }
 
@@ -126,4 +126,51 @@ article {
 article h2 {
   color: var(--destaque);
   margin-bottom: 10px;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.hard-skills, .soft-skills{
+  display: grid;
+  gap: 20px;
+}
+
+.skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-container .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.skill-container .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+.skill-container .barra {
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+
+.skill-container .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
